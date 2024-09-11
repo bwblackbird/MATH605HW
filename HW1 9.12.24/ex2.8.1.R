@@ -18,12 +18,14 @@ se_intercept <- coef(summary(fit_pb))["(Intercept)", "Std. Error"]
 
 # compute the test statistic T = (intercept - 10000) / std. error
 t_value <- (intercept - 10000) / se_intercept
+t_value
 
 # degrees of freedom
 df <- fit_pb$df.residual
 
 # two-tailed p-value
 p_value <- 2 * (1 - pt(abs(t_value), df))
+p_value
 
 # plot fitted regression line
 abline(fit_pb)
