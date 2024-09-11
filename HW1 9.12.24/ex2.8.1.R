@@ -49,7 +49,7 @@ plot(fit_pb)
 # --- 2.8.1 (b) ---
 # Test the null hypothesis H₀ : β₀ = 10000 against a two-sided alternative.
 # Q: Interpret your result.
-# A: The p_value is 0.75; this is greater than alpha = 0.05, 
+# A: The p_value is 0.75; this is much greater than alpha = 0.05, 
 # so we should accept the null hypothesis. 
 
 # --- 2.8.1 (c) ---
