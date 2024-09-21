@@ -3,4 +3,9 @@
 # circulation of a newspaper that has a weekday circulation of 210,000.
 
 circ <- read.table('HW2 9.23.24/circulation.txt', header=TRUE, sep='\t')
-circ
+plot(Sunday ~ Weekday, data=circ)
+model <- lm(Sunday ~ Weekday, data=circ)
+summary(model)
+abline(model)
+plot(model)
+
