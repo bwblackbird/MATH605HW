@@ -65,10 +65,9 @@ plot(fit_pb)
 # Some promoters of Broadway plays use the prediction rule that next week's
 # gross box office results will be equal to this week's results.
 # Q: Comment on the appropriateness of this rule.
-# A: For the most part, this is a fine rule to follow, as there is a 
-# clear correlation between the current and previous weeks. Looking at
-# the plots of the residuals, we can see that all but 3 points were
-# predicted well. 
+# A: For the most part, this is a fine rule to follow, as the fitted
+# regression line shows a clear correlation between Last Week and Current
+# Week gross box office sales, and all points are very closely aligned with it. 
 
 
 
