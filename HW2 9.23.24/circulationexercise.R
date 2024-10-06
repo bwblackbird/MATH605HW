@@ -7,7 +7,6 @@ plot(Sunday ~ Weekday, data=circ)
 model_fit <- lm(Sunday ~ Weekday, data=circ)
 summary(model_fit)
 abline(model_fit)
-plot(model_fit)
 
 # find leverage values greater than 4/n
 n <- nrow(circ)
@@ -33,3 +32,5 @@ cat("Outliers: ", outliers, "\n")
 cat("High Leverage Points that are not Outliers: ", high_lev_not_outliers, "\n")
 cat("High Cooks Distances: ", high_cooks, "\n")
 
+par(mfrow = c(2, 2))
+plot(model_fit)
